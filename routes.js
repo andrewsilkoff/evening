@@ -10,4 +10,10 @@ module.exports = function(app, arr) {
 		notes.push(obj);
 		resp.status(200).send(arr);
 	});
+	app.post("/add", function(req, resp) {
+		let obj = req.body;
+		console.log(obj);
+		notes.push(obj);
+		resp.status(200).send(arr);
+	});
 }
